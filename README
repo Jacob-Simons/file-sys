@@ -1,0 +1,94 @@
+//// Each team member's name and contributions ////////////
+Team member #1: Jacob Simons
+
+
+
+
+
+//// My own rating on the functionality ///////////////////
+Rating: B
+Explanation: 
+I think I have correctly implemented all File System commands and error checks.  Although, the only thing I'm not sure about
+is whether I have correctly established my server's socket and shell's socket.  Both the server and shell can connect to
+each other, but I think it may be only via local host.
+
+
+//// Test cases ///////////////////////////////////////////
+Test case #1: mkdir abc
+Results: 
+200 OK
+Length:0
+
+
+
+
+Test case #2: ls
+Results:
+200 OK
+Length:6
+
+abc/
+
+
+Test case #3: cd abc
+Results:
+200 OK
+Length:0
+
+
+
+Test case #4:home
+Results:
+200 OK
+Length:0
+
+Test case #5: rmdir abc
+Results:
+200 OK
+Length:0
+
+Test case #6: create abc
+Results:
+200 OK
+Length:0
+
+Test case #7: append abcdefghijk
+Results:
+200 OK
+Length:0
+
+Test case #8: stat abc
+Results:
+200 OK
+Length:68
+
+Inode block: 2
+Bytes in file: 11
+Number of blocks: 1
+First block: 4
+
+Test case #9: cat abc
+Results:
+200 OK
+Length:11
+
+abcdefghijk
+
+Test case #10: head abc 5
+Results:
+200 OK
+Length:5
+
+abcde
+
+
+Test case #11: rm abc
+Results:
+200 OK
+Length:0
+
+
+
+
+
+
